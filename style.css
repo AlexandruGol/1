@@ -1,0 +1,190 @@
+body {
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.left {
+  flex: 1;
+  background: white;
+  padding: 40px 80px;
+}
+
+header img {
+  width: 100px;
+  margin-bottom: 40px;
+  padding-left: 150px;
+}
+
+.login-box {
+  max-width: 350px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+
+.login-box {
+  max-width: 400px;
+  margin-top: 60px; 
+  padding-left: 140px;
+}
+
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* parolă cu icon */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gray;
+}
+
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.checkbox-row label {
+  margin-left: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+/* buton login */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #3b56ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+button:hover {
+  background: #2a3bd6;
+}
+
+
+.forgot {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #3b56ff;
+  margin-bottom: 25px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.signup {
+  margin-top: 54px;
+  font-size: 14px;
+  text-align: center;
+  padding-right: 60px;
+}
+
+
+
+
+.right {
+  flex: 1;
+  background: #4E60FF;
+  padding: 190px;
+  color: rgb(255, 255, 255);
+}
+
+#com {
+  position: absolute;
+  top: 0px;     
+  left: 890px;    
+  width: 500px;  
+  height: auto;
+
+}
+#rol{
+  position: absolute;
+  top: 40px;     
+  right: 160px;   
+  width: 500px;
+  height: auto;
+}
+#nigiri{
+  position: absolute;
+  bottom: 220px;  
+  left: 970px;    
+  width: 860px;  
+  height: auto;
+}
+h2{
+  position: absolute;
+  bottom: 220px;  
+  left: 1200px;    
+  width: 700px;  
+
+
+}
+#Lorem{
+  position: absolute;
+  bottom: 180px;  
+  left: 1050px;    
+  width: 600px;  
+  height: auto;
+  text-align: center;
+}
+
+.dots {
+  position: absolute;
+  bottom: 150px;     
+  left: 1380px;
+  transform: translateX(-90%);  
+  display: flex;
+  gap: 8px;
+  z-index: 5;   
+  
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+}
+.dot.active {
+  background: #ffffff;   
+}
+
+
