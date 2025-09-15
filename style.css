@@ -199,7 +199,7 @@ button:hover {
   /* imagini trec pe grid */
   .right div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
     gap: 15px;
     position: static;
     margin-bottom: 20px;
@@ -225,23 +225,5 @@ button:hover {
   #Lorem {
     font-size: 14px;
     max-width: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .right h2 {
-    font-size: 1.2rem;
-  }
-
-  #Lorem {
-    font-size: 12px;
-  }
-
-  .dots {
-    margin-top: 10px;
   }
 }
