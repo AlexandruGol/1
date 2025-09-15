@@ -105,48 +105,70 @@ button:hover {
   text-align: center;
 }
 
-/* Dreapta - imagini și text */
+/* Dreapta - imagini suprapuse */
 .right {
   flex: 1 1 400px;
   background: #4E60FF;
   color: white;
   padding: 40px 20px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
-.right img {
-  max-width: 90%;
+/* Imagini suprapuse responsive */
+#com {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 40%;
   height: auto;
-  margin: 10px 0;
 }
 
-/* Păstrăm imaginile individuale pentru stil vizual */
-#com, #rol, #nigiri {
-  max-width: 90%;
+#rol {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 35%;
   height: auto;
-  margin: 10px 0;
 }
 
+#nigiri {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 50%;
+  height: auto;
+}
+
+/* Text suprapus */
 .right h2 {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
   font-size: 1.8rem;
-  margin: 20px 0 10px 0;
+  text-align: center;
 }
 
 #Lorem {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
 }
 
+/* Dots */
 .dots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 8px;
-  justify-content: center;
 }
 
 .dot {
@@ -172,20 +194,34 @@ button:hover {
   header img {
     margin: 0 auto 20px auto;
   }
+  #com, #rol, #nigiri {
+    width: 50%;
+  }
+  .right h2 {
+    font-size: 1.5rem;
+    bottom: 20%;
+  }
+  #Lorem {
+    font-size: 14px;
+    bottom: 12%;
+  }
 }
 
 @media (max-width: 600px) {
   h1 {
     font-size: 1.5rem;
   }
+  #com, #rol, #nigiri {
+    width: 70%;
+  }
   .right h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   #Lorem {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 12px;
+    width: 90%;
   }
-  .right img {
-    max-width: 100%;
+  .dots {
+    bottom: 8%;
   }
 }
