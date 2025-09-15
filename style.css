@@ -105,7 +105,7 @@ button:hover {
   text-align: center;
 }
 
-/* Dreapta - imagini suprapuse */
+/* Dreapta - Fundal albastru */
 .right {
   flex: 1 1 400px;
   background: #4E60FF;
@@ -116,29 +116,28 @@ button:hover {
   overflow: hidden;
 }
 
-/* Imagini suprapuse responsive */
-#com {
+/* Imagini suprapuse - doar pe desktop */
+#com, #rol, #nigiri {
   position: absolute;
+  height: auto;
+}
+
+#com {
   top: 5%;
   left: 5%;
   width: 40%;
-  height: auto;
 }
 
 #rol {
-  position: absolute;
   top: 10%;
   right: 5%;
   width: 35%;
-  height: auto;
 }
 
 #nigiri {
-  position: absolute;
   bottom: 10%;
   left: 15%;
   width: 50%;
-  height: auto;
 }
 
 /* Text suprapus */
@@ -182,28 +181,50 @@ button:hover {
   background: #ffffff;
 }
 
-/* Media Queries pentru tablet și mobil */
+/* ----------------- RESPONSIVE ----------------- */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
+
   .left, .right {
     flex: 1 1 100%;
     padding: 20px;
   }
+
   header img {
     margin: 0 auto 20px auto;
   }
-  #com, #rol, #nigiri {
-    width: 50%;
+
+  /* imagini trec pe grid */
+  .right div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    position: static;
+    margin-bottom: 20px;
   }
+
+  #com, #rol, #nigiri {
+    position: static;
+    width: 100%;
+  }
+
+  /* text sub imagini */
+  .right h2, #Lorem, .dots {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 10px auto;
+  }
+
   .right h2 {
     font-size: 1.5rem;
-    bottom: 20%;
   }
+
   #Lorem {
     font-size: 14px;
-    bottom: 12%;
+    max-width: 90%;
   }
 }
 
@@ -211,17 +232,16 @@ button:hover {
   h1 {
     font-size: 1.5rem;
   }
-  #com, #rol, #nigiri {
-    width: 70%;
-  }
+
   .right h2 {
     font-size: 1.2rem;
   }
+
   #Lorem {
     font-size: 12px;
-    width: 90%;
   }
+
   .dots {
-    bottom: 8%;
+    margin-top: 10px;
   }
 }
