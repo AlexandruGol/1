@@ -1,143 +1,246 @@
-/* ====== RESET ====== */
-* {
+/* Reset */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-}
-
-/* ====== CONTAINER LOGIN + PREZENTARE ====== */
 .container {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
+  flex-wrap: wrap;
   min-height: 100vh;
 }
 
-/* ====== LOGIN ====== */
-.login-section {
-  flex: 1;
-  background: #fff;
-  padding: 60px;
+/* Stânga */
+.left {
+  flex: 1 1 400px;
+  background: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
-.login-section h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
+header img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
-.login-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.login-section input[type="email"],
-.login-section input[type="password"] {
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
+  margin-bottom: 15px;
   font-size: 14px;
 }
 
-.login-section button {
-  padding: 12px;
-  background: #4a5dff;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.login-section button:hover {
-  background: #3344cc;
-}
-
-.login-section a {
-  text-decoration: none;
-  color: #4a5dff;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-/* ====== PREZENTARE CU IMAGINI ====== */
-.preview-section {
-  flex: 1;
-  background: #4a5dff;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
+.password-wrapper {
   position: relative;
 }
 
-/* textul centrat */
-.preview-section .text {
-  text-align: center;
-  max-width: 400px;
-  margin: 40px 0;
-}
-
-/* imaginile */
-.preview-section .img-box {
+.password-wrapper .toggle-password {
   position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gray;
 }
 
-.img-top {
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-row label {
+  margin-left: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #3b56ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background: #2a3bd6;
+}
+
+.forgot {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #3b56ff;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Dreapta */
+.right {
+  flex: 1 1 400px;
+  background: #4E60FF;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.images-wrapper img {
+  position: absolute;
+  height: auto;
+}
+
+#com {
+  top: 5%;
+  left: 5%;
+  width: 40%;
+}
+
+#rol {
   top: 10%;
+  right: 5%;
+  width: 35%;
+}
+
+#nigiri {
+  bottom: 10%;
   left: 15%;
+  width: 50%;
 }
 
-.img-right {
-  top: 15%;
-  right: 15%;
+/* Text suprapus */
+.right h2 {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-.img-bottom {
+#Lorem {
+  position: absolute;
   bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
 }
 
-.preview-section img {
-  width: 180px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
 }
 
-/* ====== RESPONSIVE ====== */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+}
+
+.dot.active {
+  background: #ffffff;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
 
-  .preview-section {
-    position: relative;
-    padding: 40px 20px;
+  .left, .right {
+    flex: 1 1 100%;
+    padding: 20px;
   }
 
-  .preview-section .img-box {
-    position: relative;
-    margin: 20px auto;
+  header img {
+    margin: 0 auto 20px auto;
+  }
+
+  /* imagini pe grid */
+  .images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .images-wrapper img {
+    position: static;
+    width: 100%;
+  }
+
+  /* text sub imagini */
+  .right h2, #Lorem, .dots {
+    position: static;
     transform: none;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
+    text-align: center;
+    margin: 10px auto;
   }
 
-  .preview-section img {
-    width: 220px;
+  .right h2 {
+    font-size: 1.5rem;
+  }
+
+  #Lorem {
+    font-size: 14px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .right h2 {
+    font-size: 1.2rem;
+  }
+
+  #Lorem {
+    font-size: 12px;
+  }
+
+  .dots {
+    margin-top: 10px;
   }
 }
