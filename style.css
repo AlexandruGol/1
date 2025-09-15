@@ -20,14 +20,19 @@ body {
 
 .top-bar {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  align-items: baseline;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.top-bar img {
-  width: 40px;
-  height: auto;
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo span {
+  color: #3b56ff;
 }
 
 .top-bar h1 {
@@ -131,23 +136,25 @@ button:hover {
 .images-wrapper img {
   position: absolute;
   height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 #com {
-  top: 5%;
-  left: 8%;
+  top: 6%;
+  left: 6%;
   width: 38%;
 }
 
 #rol {
-  top: 10%;
-  right: 8%;
+  top: 8%;
+  right: 6%;
   width: 34%;
 }
 
 #nigiri {
   bottom: 12%;
-  left: 20%;
+  left: 25%;
   width: 48%;
 }
 
