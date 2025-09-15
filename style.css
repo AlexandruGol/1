@@ -196,18 +196,20 @@ button:hover {
     margin: 0 auto 20px auto;
   }
 
-  /* imagini trec pe grid */
+  /* imagini devin blocuri una sub alta */
   .right div {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    align-items: center;
     position: static;
     margin-bottom: 20px;
   }
 
   #com, #rol, #nigiri {
     position: static;
-    width: 100%;
+    width: 80%;
+    max-width: 300px;
   }
 
   /* text sub imagini */
@@ -225,5 +227,23 @@ button:hover {
   #Lorem {
     font-size: 14px;
     max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .right h2 {
+    font-size: 1.2rem;
+  }
+
+  #Lorem {
+    font-size: 12px;
+  }
+
+  .dots {
+    margin-top: 10px;
   }
 }
