@@ -1,41 +1,38 @@
+/* Reset și font */
 body {
-  margin: auto;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100vh;
 }
 
-
+/* Stânga - Login */
 .left {
-  flex: 1;
+  flex: 1 1 400px;
   background: white;
-  padding: 40px 80px;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 header img {
   width: 100px;
-  margin-bottom: 40px;
-  padding-left: 150px;
-}
-
-.login-box {
-  max-width: 350px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 0 0 10px 0;
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
 .login-box {
   max-width: 400px;
-  margin-top: 60px; 
-  padding-left: 140px;
+  margin: 0 auto;
 }
 
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
 
 label {
   display: block;
@@ -54,7 +51,6 @@ input[type="password"] {
   font-size: 14px;
 }
 
-/* parolă cu icon */
 .password-wrapper {
   position: relative;
 }
@@ -68,22 +64,16 @@ input[type="password"] {
   color: gray;
 }
 
-
 .checkbox-row {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 10px;
 }
 
 .checkbox-row label {
   margin-left: 8px;
-  font-size: 14px;
-  margin-top: 10px;
-
 }
 
-/* buton login */
 button {
   width: 100%;
   padding: 12px;
@@ -94,97 +84,108 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 15px;
-  margin-top: 25px;
 }
 
 button:hover {
   background: #2a3bd6;
 }
 
-
 .forgot {
   display: block;
   text-align: center;
   font-size: 14px;
   color: #3b56ff;
-  margin-bottom: 25px;
   text-decoration: none;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
 .signup {
-  margin-top: 54px;
+  margin-top: 20px;
   font-size: 14px;
   text-align: center;
-  padding-right: 60px;
 }
 
-
-
-
+/* Dreapta - imagini și text */
 .right {
-  flex: 1;
+  flex: 1 1 400px;
   background: #4E60FF;
-  padding: 190px;
-  color: rgb(255, 255, 255);
-}
-
-#com {
-  position: absolute;
-  top: 0px;     
-  left: 890px;    
-  width: 500px;  
-  height: auto;
-
-}
-#rol{
-  position: absolute;
-  top: 40px;     
-  right: 160px;   
-  width: 500px;
-  height: auto;
-}
-#nigiri{
-  position: absolute;
-  bottom: 220px;  
-  left: 970px;    
-  width: 860px;  
-  height: auto;
-}
-h2{
-  position: absolute;
-  bottom: 220px;  
-  left: 1200px;    
-  width: 700px;  
-
-
-}
-#Lorem{
-  position: absolute;
-  bottom: 180px;  
-  left: 1050px;    
-  width: 600px;  
-  height: auto;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+}
+
+.right img {
+  max-width: 90%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Păstrăm imaginile individuale pentru stil vizual */
+#com, #rol, #nigiri {
+  max-width: 90%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.right h2 {
+  font-size: 1.8rem;
+  margin: 20px 0 10px 0;
+}
+
+#Lorem {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
 }
 
 .dots {
-  position: absolute;
-  bottom: 150px;     
-  left: 1380px;
-  transform: translateX(-90%);  
   display: flex;
   gap: 8px;
-  z-index: 5;   
-  
+  justify-content: center;
 }
+
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: rgba(255,255,255,0.4);
 }
+
 .dot.active {
-  background: #ffffff;   
+  background: #ffffff;
 }
 
+/* Media Queries pentru tablet și mobil */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+  header img {
+    margin: 0 auto 20px auto;
+  }
+}
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .right h2 {
+    font-size: 1.4rem;
+  }
+  #Lorem {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .right img {
+    max-width: 100%;
+  }
+}
