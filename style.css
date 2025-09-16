@@ -30,12 +30,13 @@ body {
   width: 100px;
   height: auto;
   margin-left: 90px;
-
+  margin-top: 40px;
 }
 
 h1 {
   font-size: 2rem;
   margin-left: 90px;
+  margin-top: 40px;
 }
 
 .subtitle {
