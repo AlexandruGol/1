@@ -1,48 +1,45 @@
 /* Reset */
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Layout principal */
 .container {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
 }
 
-/* Stânga */
+/* ---------------- Stânga ---------------- */
 .left {
   flex: 1 1 400px;
   background: white;
   padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-.top-bar {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
+  width: 140px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
-.logo span {
-  color: #3b56ff;
-}
-
-.top-bar h1 {
+h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .subtitle {
   font-size: 14px;
   color: #555;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -89,6 +86,7 @@ input[type="password"] {
 
 .checkbox-row label {
   margin-left: 8px;
+  font-size: 14px;
 }
 
 button {
@@ -101,6 +99,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 15px;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -122,22 +121,21 @@ button:hover {
   text-align: center;
 }
 
-/* Dreapta */
+/* ---------------- Dreapta ---------------- */
 .right {
   flex: 1 1 400px;
   background: #4E60FF;
   color: white;
   padding: 40px 20px;
-  box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
 
 .images-wrapper img {
   position: absolute;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  border: none;   /* fără borduri */
+  border-radius: 0; /* fără colțuri rotunjite */
+  box-shadow: none; /* fără umbre */
 }
 
 #com {
@@ -176,6 +174,7 @@ button:hover {
   transform: translateX(-50%);
   width: 70%;
   text-align: center;
+  font-size: 14px;
 }
 
 /* Dots */
@@ -199,7 +198,9 @@ button:hover {
   background: #ffffff;
 }
 
-/* ----------------- RESPONSIVE ----------------- */
+/* ---------------- Responsive ---------------- */
+
+/* Tablete */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -210,7 +211,12 @@ button:hover {
     padding: 20px;
   }
 
-  /* imagini pe grid */
+  .logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  /* imagini devin pe grid */
   .images-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -224,7 +230,7 @@ button:hover {
     width: 100%;
   }
 
-  /* text sub imagini */
+  /* text și dots sub imagini */
   .right h2, #Lorem, .dots {
     position: static;
     transform: none;
@@ -242,8 +248,9 @@ button:hover {
   }
 }
 
+/* Telefoane */
 @media (max-width: 600px) {
-  .top-bar h1 {
+  h1 {
     font-size: 1.5rem;
   }
 
