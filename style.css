@@ -21,7 +21,7 @@ body {
 .left {
   flex: 1 1 400px;
   background: white;
-  padding: 30px 35px 40px; /* ↑ am mărit padding-top ca să coboare login */
+  padding: 30px 30px 40px; /* ↑ am mărit padding-top ca să coboare login */
 }
 
 
@@ -145,7 +145,7 @@ button:hover {
 
 #com {
   top: 3%;
-  left: 0.2%;
+  left: 0.1%;
   width: 63%;  
 }
 
