@@ -30,7 +30,7 @@ body {
   width: 100px;
   height: auto;
   margin-left: 90px;
-  top: auto;
+  top: 7%;
 
 }
 
@@ -45,7 +45,7 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
   padding-left: 5px;
-  margin-left: 90px;
+  margin-left: 88px;
 }
 
 .login-box {
@@ -144,14 +144,14 @@ button:hover {
 }
 
 #com {
-  top: 4%;
+  top: 3%;
   left: 1%;
   width: 63%;  
 }
 
 #rol {
   top: 8%;
-  right: 5%;
+  right: 3%;
   width: 60%; 
 }
 
