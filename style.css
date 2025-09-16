@@ -21,14 +21,14 @@ body {
 .left {
   flex: 1 1 400px;
   background: white;
-  padding: 40px 20px;
+  padding: 60px 20px 40px; /* ↑ am mărit padding-top ca să coboare login */
 }
 
 /* Logo + Login pe același rând */
 .logo-login {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* mutat în stânga */
   gap: 12px;
   margin-bottom: 20px;
 }
@@ -45,13 +45,14 @@ body {
 .subtitle {
   font-size: 14px;
   color: #555;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
+  padding-left: 5px;
 }
 
 .login-box {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto 0; /* am coborât formularul */
 }
 
 label {
@@ -144,23 +145,23 @@ button:hover {
   box-shadow: none;
 }
 
-/* Poze mai mari (dublu) */
+/* Poze mai mici decât înainte */
 #com {
   top: 5%;
   left: 5%;
-  width: 76%;
+  width: 50%;  /* era 76%, acum mai mic */
 }
 
 #rol {
   top: 8%;
   right: 5%;
-  width: 68%;
+  width: 45%;  /* era 68%, acum mai mic */
 }
 
 #nigiri {
-  bottom: 25%; /* ridicat mai sus */
-  left: 20%;
-  width: 96%;
+  bottom: 25%;
+  left: 10%;   /* mutat mai la stânga */
+  width: 70%;  /* era 96%, acum mai mic */
 }
 
 /* Text suprapus */
@@ -226,7 +227,6 @@ button:hover {
     font-size: 1.8rem;
   }
 
-  /* imagini devin pe grid */
   .images-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -240,7 +240,6 @@ button:hover {
     width: 100%;
   }
 
-  /* text și dots sub imagini */
   .right h2, #Lorem, .dots {
     position: static;
     transform: none;
@@ -263,6 +262,7 @@ button:hover {
   .logo-login {
     flex-direction: column;
     gap: 6px;
+    justify-content: center;
   }
 
   .logo {
