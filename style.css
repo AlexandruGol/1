@@ -21,7 +21,7 @@ body {
 .left {
   flex: 1 1 400px;
   background: white;
-  padding: 50px 20px 40px; /* ↑ am mărit padding-top ca să coboare login */
+  padding: 70px 30px 50px; /* ↑ am mărit padding-top ca să coboare login */
 }
 
 
@@ -29,7 +29,7 @@ body {
 .logo {
   width: 100px;
   height: auto;
-  margin-left: 40px;
+  margin-left: 80px;
 
 }
 
@@ -143,8 +143,8 @@ button:hover {
 }
 
 #com {
-  top: 8%;
-  left: 3%;
+  top: 5%;
+  left: 7%;
   width: 63%;  
 }
 
