@@ -27,7 +27,7 @@ body {
 
 
 .logo {
-  width: 250px;
+  width: 100px;
   height: auto;
   margin-left: 30px;
 
@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 .subtitle {
@@ -44,12 +44,12 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
   padding-left: 5px;
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 .login-box {
   max-width: 400px;
-  margin: 25px auto 0; /* am coborât formularul */
+  margin: 25px auto 0; 
 }
 
 label {
@@ -125,7 +125,7 @@ button:hover {
   text-align: center;
 }
 
-/* ---------------- Dreapta ---------------- */
+
 .right {
   flex: 1 1 400px;
   background: #4E60FF;
@@ -145,19 +145,19 @@ button:hover {
 #com {
   top: 5%;
   left: 5%;
-  width: 68%;  
+  width: 63%;  
 }
 
 #rol {
   top: 8%;
   right: 5%;
-  width: 65%; 
+  width: 60%; 
 }
 
 #nigiri {
   bottom: 25%;
   left: 7%;   
-  width: 100%; }
+  width: 96%; }
 
 /* Text suprapus */
 .right h2 {
