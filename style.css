@@ -24,14 +24,7 @@ body {
   padding: 60px 20px 40px; /* ↑ am mărit padding-top ca să coboare login */
 }
 
-/* Logo + Login pe același rând */
-.logo-login {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* mutat în stânga */
-  gap: 12px;
-  margin-bottom: 20px;
-}
+
 
 .logo {
   width: 60px;
@@ -145,50 +138,47 @@ button:hover {
   box-shadow: none;
 }
 
-/* Poze mai mari (x0.7 extra față de versiunea precedentă) */
 #com {
   top: 5%;
   left: 5%;
-  width: 85%;  /* era 50%, acum 85% */
+  width: 68%;  
 }
 
 #rol {
   top: 8%;
   right: 5%;
-  width: 76.5%; /* era 45%, acum 76.5% */
+  width: 65%; 
 }
 
 #nigiri {
   bottom: 25%;
-  left: 8%;    /* mutat mai la stânga */
-  width: 119%; /* era 70%, acum 119% */
-}
+  left: 7%;   
+  width: 100%; }
 
 /* Text suprapus */
 .right h2 {
   position: absolute;
-  bottom: 18%; /* mai jos */
+  bottom: 18%; 
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  font-size: 1.4rem; /* mai mic */
+  font-size: 1.4rem; 
   text-align: center;
 }
 
 #Lorem {
   position: absolute;
-  bottom: 10%; /* mai jos */
+  bottom: 10%; 
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
   text-align: center;
-  font-size: 12px; /* mai mic */
+  font-size: 12px; 
 }
-
 /* Dots */
 .dots {
   position: absolute;
-  bottom: 5%; /* mai jos */
+  bottom: 5%; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -208,7 +198,7 @@ button:hover {
 
 /* ---------------- Responsive ---------------- */
 
-/* Tablete */
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -261,7 +251,7 @@ button:hover {
   }
 }
 
-/* Telefoane */
+
 @media (max-width: 600px) {
   .logo-login {
     flex-direction: column;
