@@ -29,7 +29,8 @@ body {
 .logo {
   width: 100px;
   height: auto;
-  margin-left: 80px;
+  margin-left: 90px;
+  top: auto;
 
 }
 
@@ -143,8 +144,8 @@ button:hover {
 }
 
 #com {
-  top: 5%;
-  left: 7%;
+  top: 4%;
+  left: 1%;
   width: 63%;  
 }
 
