@@ -145,59 +145,59 @@ button:hover {
   box-shadow: none;
 }
 
-/* Poze mai mici decât înainte */
+/* Poze mai mari (x0.7 extra față de versiunea precedentă) */
 #com {
   top: 5%;
   left: 5%;
-  width: 50%;  /* era 76%, acum mai mic */
+  width: 85%;  /* era 50%, acum 85% */
 }
 
 #rol {
   top: 8%;
   right: 5%;
-  width: 45%;  /* era 68%, acum mai mic */
+  width: 76.5%; /* era 45%, acum 76.5% */
 }
 
 #nigiri {
   bottom: 25%;
-  left: 10%;   /* mutat mai la stânga */
-  width: 70%;  /* era 96%, acum mai mic */
+  left: 8%;    /* mutat mai la stânga */
+  width: 119%; /* era 70%, acum 119% */
 }
 
 /* Text suprapus */
 .right h2 {
   position: absolute;
-  bottom: 25%;
+  bottom: 18%; /* mai jos */
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  font-size: 1.8rem;
+  font-size: 1.4rem; /* mai mic */
   text-align: center;
 }
 
 #Lorem {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%; /* mai jos */
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px; /* mai mic */
 }
 
 /* Dots */
 .dots {
   position: absolute;
-  bottom: 8%;
+  bottom: 5%; /* mai jos */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(255,255,255,0.4);
 }
@@ -248,12 +248,16 @@ button:hover {
   }
 
   .right h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #Lorem {
-    font-size: 14px;
+    font-size: 13px;
     max-width: 90%;
+  }
+
+  .dots {
+    margin-top: 8px;
   }
 }
 
@@ -274,14 +278,14 @@ button:hover {
   }
 
   .right h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   #Lorem {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .dots {
-    margin-top: 10px;
+    margin-top: 6px;
   }
 }
