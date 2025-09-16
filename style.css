@@ -21,7 +21,7 @@ body {
 .left {
   flex: 1 1 400px;
   background: white;
-  padding: 50px 20px 40px; /* ↑ am mărit padding-top ca să coboare login */
+  padding: 30px 40px 40px; /* ↑ am mărit padding-top ca să coboare login */
 }
 
 
