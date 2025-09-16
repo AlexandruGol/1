@@ -30,7 +30,7 @@ body {
   width: 100px;
   height: auto;
   margin-left: 90px;
-  top: 7%;
+  top: 20%;
 
 }
 
@@ -145,13 +145,13 @@ button:hover {
 
 #com {
   top: 3%;
-  left: 1%;
+  right: 3%;
   width: 63%;  
 }
 
 #rol {
   top: 8%;
-  right: 3%;
+  right: 2%;
   width: 60%; 
 }
 
