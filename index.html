@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="Food del.png">
-  <title>Food delivery 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="Food del.png">
 </head>
-
 <body>
-  <main class="container">
-
-    <!-- Stânga: Login -->
-    <section class="left">
-      <div>
-        <img src="Food del.png" alt="Logo Food Delivery" class="logo">
+<main>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <!-- Left -->
+      <div class="left-side">
+        <div class="logo">
+          <img src="Food del.png" alt="Logo">
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <i class="fa fa-search"></i>
+        </div>
       </div>
-        <h1>Login</h1>
-        <p class="subtitle">Sign in with your data that you entered during your registration</p>
-      <div class="login-box">
-        <label>Email</label>
-        <input type="email" placeholder="name@example.com">
 
-        <label>Password</label>
-        <div class="password-wrapper">
-          <input type="password" placeholder="min. 8 characters">
-          <span class="toggle-password">👁</span>
+      <!-- Right -->
+      <div class="nav-links">
+        <a href="#">Restaurants</a>
+        <a href="#">Deals</a>
+        <a href="#">My orders</a>
+
+        <div class="notif">
+          <i class="fa fa-envelope"></i>
+          <span>4</span>
         </div>
 
-        <div class="checkbox-row">
-          <input type="checkbox" id="keepLoggedIn">
-          <label for="keepLoggedIn">Keep me logged in</label>
+        <div class="profile">
+          <img src="profile.png" alt="Profile">
         </div>
+      </div>
+    </div>
+  </header>
 
-        <button>Login</button>
-        <a href="#" class="forgot">Forgot password</a>
+  <!-- Promo banners -->
+  <section class="banners">
+    <div class="banner">
+      <img src="des.png" alt="desserts">
+    </div>
+
+    <div class="banner">
+      <img src="bur.png" alt="burger">
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="category"><span>🍕</span><p>Pizza</p></div>
+    <div class="category active"><span>🍔</span><p>Burger</p></div>
+    <div class="category"><span>🍖</span><p>BBQ</p></div>
+    <div class="category active"><span>🍣</span><p>Sushi</p></div>
+    <div class="category"><span>🥦</span><p>Vegan</p></div>
+    <div class="category"><span>🧁</span><p>Desserts</p></div>
+  </section>
+
+  <!-- Restaurants -->
+  <section class="restaurants">
+    <h2>Nearby restaurants</h2>
+    <div class="cards">
+      <div class="card featured">
+        <span class="featured-badge">FEATURED</span>
+        <img src="royal.png" alt="Royal Sushi House">
+        <h3>Royal Sushi House</h3>
+        <p>30-40 min • $32 min sum</p>
+        <span class="tag">Sushi</span>
       </div>
 
-      <p class="signup">Don’t have an account? <a href="#">Sign up</a></p>
-    </section>
-
-    <!-- Dreapta: Imagini + text -->
-    <section class="right">
-
-      <div class="images-wrapper">
-        <img src="image copy.png" alt="comments" id="com">
-        <img src="image copy 3.png" alt="rol set" id="rol">
-        <img src="image.png" alt="nigiri" id="nigiri">
+      <div class="card featured">
+        <span class="featured-badge">FEATURED</span>
+        <img src="bur&pi.png" alt="Burgers & Pizza">
+        <h3>Burgers & Pizza</h3>
+        <p>40-60 min • $24 min sum</p>
+        <span class="tag">Burger</span>
+        <span class="tag">Pizza</span>
       </div>
 
-      <h2>Leave reviews for all meals</h2>
-      <p id="Lorem">
-        Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, 
-        eirmod assentior eum ne, et omnis antiopam mel.
-      </p>
-
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="card">
+        <img src="ninja.png" alt="Ninja Sushi">
+        <h3>Ninja Sushi</h3>
+        <p>20-40 min • $40 min sum</p>
+        <span class="tag">Sushi</span>
       </div>
+    </div>
 
-    </section>
-  </main>
+    <div class="cards extra-images">
+      <img src="roly.png" alt="" id="roly">
+      <img src="bu.png" alt="" id="bu">
+      <img src="ni.png" alt="" id="ni">
+    </div>
+  </section>
+</main>
 </body>
-
 </html>
